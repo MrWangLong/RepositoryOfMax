@@ -53,10 +53,11 @@ public abstract class NumberGenerator {
    public void notifyObservers(){
 	   Iterator<Observer> iterator = observers.iterator();
 	   
-	   while (iterator.hasNext()) {
+	   while (iterator.hasNext()) { 
 		Observer observer = (Observer) iterator.next();
 		
 		observer.update(this);
 	}
    }
+
 }
